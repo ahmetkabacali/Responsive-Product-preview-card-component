@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/**/
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(30, 38%, 92%);
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    line-height: 1.3;
+}
+
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+/*left*/
+.main-content-left,
+.img-wrapper,
+.img-wrapper img {
+    height: 100%;
+}
+
+.img-wrapper img {
+    object-fit: cover;
+    width: 100%;
+}
+
+/*right*/
+.main-content-right {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    background-color: #fff;
+    padding: 10%;
+    justify-content: center;
+}
+
+.main-content-right h3 {
+    font-weight: 400;
+    color: hsl(228, 12%, 48%);
+}
+
+.main-content-right p {
+    color: hsl(228, 12%, 48%);
+}
+
+.main-content-right h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 2.3rem;
+}
+
+.price-wrap .new_price {
+    color: hsl(158, 36%, 37%);
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    font-family: 'Fraunces', serif;
+}
+
+.price-wrap .old_price {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+.shopCart-btn {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: hsl(158, 36%, 37%);
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    transition: all 0.3s;
+}
+
+.cart-text {
+    margin-left: 1rem;
+}
+
+.cart-btn:hover {
+    background-color: hsl(212, 21%, 14%);
+    cursor: pointer;
+}
+
+.attribution {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/*media*/
+@media(max-width:568px) {
+
+    .main-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: 20rem;
+        margin: 1rem;
+
+    }
+
+    .main-content-right {
+        background-color: #fff;
+        padding: 5%;
+        border-radius: 0 0 20px 20px;
+        gap: 0.6rem;
+
+    }
+
+    .img-wrapper img {
+        border-radius: 20px 20px 0 0;
+        object-position: center 30%;
+        height: 100%
+    }
+
+}
