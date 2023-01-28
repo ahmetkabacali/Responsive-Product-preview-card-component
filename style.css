@@ -23,7 +23,7 @@ body {
 
 
 .main-content {
-    padding-top: 1rem;
+    padding-top: 1.2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 600px;
