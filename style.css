@@ -23,6 +23,7 @@ body {
 
 
 .main-content {
+    padding-top: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 600px;
@@ -50,6 +51,7 @@ body {
     background-color: #fff;
     padding: 10%;
     justify-content: center;
+    line-height: 2.2rem;
 }
 
 .main-content-right h3 {
